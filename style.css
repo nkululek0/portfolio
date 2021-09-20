@@ -808,7 +808,7 @@ hr:nth-child(3) {
     }
 
     .header li {
-        width: 23.7%;
+        width: 23.9%;
     }
     /** End of Navigation Menu **/
 
@@ -845,7 +845,15 @@ hr:nth-child(3) {
 
     .download-local {
         float: right;
-        margin-left: 0px;
+        margin-right: 5px;
     }
     /** End of Projects Block/Section **/
+
+    @media screen and (min-width: 808px) {
+        /** Navigation Menu **/
+        .header li {
+            width: 24%;
+        }
+        /** End of Navigation Menu **/
+    }
 }
