@@ -1,2 +1,1 @@
-# portfolio
-nkululeko vuyo zikode personal portfolio
+## Nkululeko Vuyo Zikode Personal Portfolio
