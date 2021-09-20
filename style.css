@@ -1,0 +1,851 @@
+ /** Page Layout **/
+ * {
+     box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+ }
+
+ body { 
+     font-family: 'Yomogi', cursive;
+ }
+
+ a:hover {
+     color: black;
+ }
+
+.main {
+    display: block;
+    position: relative;
+    top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.block-header h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: -6px;
+}
+
+hr {
+    color: white;
+    height: 3px;
+    margin: auto;
+    margin-top: 2px;
+    border: orangered 1px solid;
+    border-radius: 20px;
+}
+
+hr:nth-child(3) {
+    margin-bottom: 5px;
+}
+
+.sub-header h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+/** End of Page Layout **/
+
+/** Navigation Menu **/
+ .header {
+    display: block;
+    text-align: center;
+    width: 900px;
+    margin: auto;
+}
+
+.header ul {
+    font-weight: bold;
+    background-color: orangered;
+    padding: 4px;
+    margin-top: 5px;
+}
+
+.header li {
+    display: inline-block;
+    border: white 2px solid;
+    width: 215px;
+    height: 30px;
+    color: white;
+}
+
+.header li:hover {
+    background-color: white;
+    color: orangered;
+}
+/** End of Navigation Menu **/
+
+/** Introduction Block/Section **/
+.main .intro {
+    display: block;
+    border: white 2px solid;
+}
+
+.main .intro h1 {
+    position: relative;
+    width: 900px;
+    margin: auto;
+    margin-top: 2.2em;
+    text-align: center;
+    font-size: 35px;
+}
+
+.main .intro .my-pic {
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: orangered 3px dotted;
+}
+
+.main .intro .personal-statemet {
+    display: block;
+    padding: 10px;
+    margin-top: 95px;
+    border: orangered 3px double;
+    border-radius: 4px;
+}
+
+.main .intro .personal-statemet .block-header hr {
+    width: 18em;
+}
+
+.main .intro .personal-statemet p {
+   margin-top: 8px;
+   text-align: justify;
+}
+/** End of Introduction Block/Section **/
+
+/** Tech-Stack Block/Section **/
+.main .tech-stack {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main .tech-stack .block-header hr {
+    width: 6.7em;
+}
+
+.development .sub-header hr:nth-child(2) {
+    width: 9.7em;
+}
+
+.development .sub-header hr:nth-child(3) {
+    width: 6em;
+}
+
+.comp-literacy .sub-header hr:nth-child(2) {
+    width: 8em;
+}
+
+.comp-literacy .sub-header hr:nth-child(3) {
+    width: 5em;
+}
+
+.tech-stack ul {
+    display: inline-table;
+    margin-left: 5em;
+    text-align: left;
+}
+
+.tech-stack li {
+    padding-top: 5px;
+    list-style: none;
+}
+
+.tech-stack li:before {
+    content: "\272F";
+    margin-right: 5px;
+}
+
+.tech-stack .comp-list-1 {
+    margin: auto;
+}
+/** End of Tech-Stack Block/Section **/
+
+/** Projects Block/Section **/
+.main .projects {
+    margin-top: 30px;
+}
+
+.main .projects .block-header hr {
+    width: 5em;
+    margin-bottom: 10px;
+}
+
+.password-manager hr:nth-child(2) {
+    width: 7.7em;
+    margin-left: 0;
+}
+
+.password-manager hr:nth-child(3) {
+    width: 5.3em;
+    margin-left: 0;
+}
+
+.memory-game hr:nth-child(2) {
+    width: 5.5em;
+    margin-left: 0;
+}
+
+.memory-game hr:nth-child(3) {
+    width: 4em;
+    margin-left: 0;
+}
+
+.semitone-difference hr:nth-child(2) {
+    width: 9.8em;
+    margin-left: 0;
+}
+
+.semitone-difference hr:nth-child(3) {
+    width: 5.8em;
+    margin-left: 0;
+}
+
+.main .projects .button {
+    position: absolute;
+    display: inline-block;
+    font-size: 35px;
+    color: transparent;
+    background-color: transparent;
+    margin-top: 140px;
+    padding: 1px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    border-radius: 80%;
+}
+
+.main .projects .button:hover {
+    cursor: pointer;
+}
+
+.main .projects .button.left {
+    margin-left: 13px;
+}
+
+.main .projects .button.right {
+    margin-left: 24.1em;
+}
+
+.main .projects .projects-container {
+    height: 300px;
+    width: 900px;
+    margin: auto;
+    border: orangered 3px double;
+    border-radius: 4px;
+}
+
+.main .projects .projects-container .proj {
+    display: block;
+    margin: 7px;
+}
+
+.main .projects .projects-container .proj:nth-child(n+2) {
+    display: none;
+}
+
+.main .projects .projects-container .proj img {
+    width: 435px;
+    height: 280px;
+    float: left;
+    border-radius: 4px;
+}
+
+.main .projects .projects-container .proj img:hover {
+    cursor: pointer;
+}
+
+.main .projects .projects-container .proj .proj-details {
+    width: 435px;
+    height: 280px;
+    float: right;
+}
+
+.main .projects .projects-container .proj .proj-details .details {
+    height: 206px;
+    text-align: justify;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.main .projects .projects-container .proj .proj-details h2 {
+    margin-top: -5px;
+}
+
+.main .projects .projects-container .proj .proj-details button {
+    font-weight: bold;
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    border: orangered 2px double;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.main .projects .projects-container .proj .proj-details button:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.main .projects .projects-container .proj .proj-details button.coming-soon-button {
+    width: 430px;
+    cursor: unset;
+}
+
+.main .projects .projects-container .proj .proj-details button.coming-soon-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.main .projects .fa-download,
+.main .projects .fa-upload,
+.main .projects .fa-drafting-compass {
+    display: inline-block;
+    position: relative;
+    color: black;
+    margin-left: 10px;
+    bottom: 1px;
+}
+
+.download-local {
+    margin-left: 120px;
+}
+/** End of Projects Block/Section **/
+
+/** Footer Section **/
+.footer {
+    display: block;
+    position: relative;
+    margin-top: 90px;
+    margin-left: 10px;
+}
+
+.footer .block-header hr{
+    width: 144px;
+}
+
+.footer .socials {
+    text-align: center;
+}
+
+.footer .socials div {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.footer .socials img {
+    float: left;
+    width: 70px;
+    height: 70px;
+    border: orangered 3px dotted;
+    border-radius: 50%;
+}
+
+.footer .socials img:hover {
+    opacity: 0.8;
+}
+
+.footer .socials p {
+    display: inline-block;
+    width: 70px;
+    margin-top: 25px;
+    color: black;
+}
+
+.footer .socials .linkedin-text p {
+    margin-left: 10px;
+}
+
+.footer .socials p:hover {
+    font-weight: bolder;
+    text-shadow: black 1px 1px;
+}
+/** End of Footer Section **/
+
+@media screen and (max-width: 480px) {
+    /** Page Layout **/
+    .block-header h3 {
+        font-size: 18px;
+    }
+    /** End of Page Layout **/
+
+    /** Navigation Menu **/
+    .header {
+        width: 90%;
+    }
+
+    .header a {
+        text-decoration: none;
+    }
+
+    .header ul {
+        padding: 1px 5px;
+    }
+
+    .header li {
+        display: block;
+        width: 100%;
+        height: 2.5em;
+        padding-top: 5px;
+        margin: 5px 0px;
+    }
+
+    .header ul .visibilty {
+        display: none;
+    }
+
+    .header .home-nav-button {
+        padding-left: 20px;
+    }
+
+    .header .fa-caret-square-down {
+        line-height: 0;
+        width: 10px;
+    }
+
+    .header .fa-caret-square-down::before {
+        left: 5px;
+        font-size: 25px;
+        top: 4px;
+        position: relative;
+    }
+    /** End of Navigation Menu **/
+
+    /** Introduction Block/Section **/
+    .main .intro .my-pic {
+        float: none;
+        display: block;
+        margin: auto;
+        position: relative;
+        bottom: 1em;
+    }
+
+    .main .intro h1 {
+        width: auto;
+        margin: auto;
+        margin-top: 1em;
+        font-size: 20px;
+    }
+
+    .main .intro .personal-statemet .block-header hr {
+        width: 13.5em;
+    }
+
+    .main .intro .personal-statemet .block-header {
+        margin-bottom: 10px;
+    }
+
+    .main .intro .personal-statemet {
+        margin-top: 1.5em;
+    }
+
+    .main .intro .personal-statemet .read-more-target {
+        color: orangered;
+    }    
+
+    .main .intro .personal-statemet .read-more-text {
+        display: none;
+    }
+    /** End of Introduction Block/Section **/
+
+    /** Tech-Stack Block/Section **/
+    .main .tech-stack .block-header hr {
+        width: 5em;
+    }
+
+    .tech-stack ul:not(.comp-list-1) {
+        display: block;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    /** End of Tech-Stack Block/Section **/
+
+    /** Projects Block/Section **/
+    .main .projects .block-header hr {
+        width: 4em;
+    }
+
+    .main .projects .projects-container {
+        width: 100%;
+        height: 37.4em;
+    }
+
+    .main .projects .button.right {
+        margin-left: 0px;
+        right: 0.78em;
+    }
+
+    .main .projects .projects-container .proj img {
+        width: 100%;
+        float: none;
+    }
+
+    .main .projects .projects-container .proj .proj-details {
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
+
+    .main .projects .projects-container .proj .proj-details .details {
+        height: 10.5em;
+        margin-right: 5px;
+    }
+
+    .main .projects .projects-container .proj .proj-details .sub-header {
+        margin-top: 10px;
+    }
+
+    .main .projects .projects-container .proj .proj-details button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .main .projects .projects-container .proj .proj-details button.coming-soon-button {
+        width: 100%;
+        margin-top: 3.3em;
+    }
+
+    .main .projects .projects-container .proj .proj-details .remote-anchor,
+    .main .projects .projects-container .proj .proj-details .download-anchor {
+        display: block;
+    }
+
+    .download-local {
+        margin-left: 0px;
+    }
+    /** End of Projects Block/Section **/
+
+    /** Footer Section **/
+    .footer .block-header hr {
+        width: 7em;
+    }
+
+    .footer .socials div,
+    .footer .social-icon {
+        display: block;
+    }
+
+    .footer .socials img {
+        float: none;
+    }
+
+    .phone.social-icon {
+        display: block;
+        float: none;
+        margin: auto;
+    }
+
+    .footer .socials p {
+        margin-top: 0px;
+    }
+
+    .footer .socials .linkedin-text p {
+        margin-left: 0px;
+    }
+
+    .footer .socials p.phone-mobile-text {
+        margin-top: 5px;
+        color: white;
+    }
+
+    .footer .socials p.phone-mobile-text:hover {
+        text-shadow: none;
+    }
+
+    .footer .socials p.phone-mobile-text::after {
+        content: "0812726384";
+        color: black;
+        position: relative;
+        right: 45px;
+    }
+    /** End of Footer Section **/
+
+    @media screen and (max-width: 283px) {
+        /** Introduction Block/Section **/
+        .personal-statemet .block-header h3 {
+            text-decoration: orangered double underline;
+        }
+
+        .main .intro .personal-statemet .block-header hr {
+            display: none;
+        }
+        /** End of Introduction Block/Section **/
+    }
+
+    @media screen and (max-width: 377px) {
+        /** Projects Block/Section **/
+        .main .projects .button {
+            margin-top: 120px;
+        }
+
+        .main .projects .projects-container .proj img {
+            height: 240px;
+        }
+
+        .main .projects .projects-container .proj .proj-details button.remote-version {
+            margin-top: 45px;
+        }
+
+        .main .projects .projects-container .proj .proj-details button.coming-soon-button {
+            margin-top: 6.2em;
+        }
+        /** End of Projects Block/Section **/
+
+        @media screen and (max-width: 355px) {
+            /** Projects Block/Section **/
+            .main .projects .projects-container .proj .proj-details .details {
+                font-size: 0.8em;
+            }
+
+            .main .projects .projects-container .proj .proj-details button.remote-version {
+                margin-top: 5.9em;
+            }
+
+            .main .projects .projects-container .proj .proj-details button.coming-soon-button {
+                margin-top: 8.9em;
+            }
+            /** End of Projects Block/Section **/
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    /** Navigation Menu **/
+    .header {
+        width: 90%;
+    }
+
+    .header a {
+        text-decoration: none;
+    }
+
+    .header ul {
+        padding: 1px 5px;
+    }
+
+    .header li {
+        display: block;
+        width: 100%;
+        height: 2.5em;
+        padding-top: 5px;
+        margin: 5px 0px;
+    }
+
+    .header ul .visibilty {
+        display: none;
+    }
+
+    .header .home-nav-button {
+        padding-left: 20px;
+    }
+
+    .header .fa-caret-square-down {
+        line-height: 0;
+        width: 10px;
+    }
+
+    .header .fa-caret-square-down::before {
+        left: 5px;
+        font-size: 25px;
+        top: 4px;
+        position: relative;
+    }
+    /** End of Navigation Menu **/
+
+    /** Introduction Block/Section **/
+    .main .intro .my-pic {
+        float: none;
+        display: block;
+        margin: auto;
+        position: relative;
+        bottom: 1em;
+    }
+
+    .main .intro h1 {
+        width: auto;
+        margin: auto;
+        margin-top: 1em;
+        font-size: 20px;
+    }
+
+    .main .intro .personal-statemet .block-header hr {
+        width: 17.5em;
+    }
+
+    .main .intro .personal-statemet .block-header {
+        margin-bottom: 10px;
+    }
+
+    .main .intro .personal-statemet {
+        margin-top: 1.5em;
+    }
+
+    .main .intro .personal-statemet .read-more-target {
+        color: orangered;
+    }    
+
+    .main .intro .personal-statemet .read-more-text {
+        display: none;
+    }
+    /** End of Introduction Block/Section **/
+
+    /** Projects Block/Section **/
+    .main .projects .block-header hr {
+        width: 4em;
+    }
+
+    .main .projects .projects-container {
+        width: 100%;
+        height: 37.4em;
+    }
+
+    .main .projects .button.right {
+        margin-left: 0px;
+        right: 0.78em;
+    }
+
+    .main .projects .projects-container .proj img {
+        width: 100%;
+        float: none;
+    }
+
+    .main .projects .projects-container .proj .proj-details {
+        width: 100%;
+        height: 100%;
+        float: none;
+    }
+
+    .main .projects .projects-container .proj .proj-details .details {
+        height: 10.5em;
+        margin-right: 5px;
+    }
+
+    .main .projects .projects-container .proj .proj-details .sub-header {
+        margin-top: 10px;
+    }
+
+    .main .projects .projects-container .proj .proj-details button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .main .projects .projects-container .proj .proj-details button.coming-soon-button {
+        width: 100%;
+        margin-top: 3.3em;
+    }
+
+    .main .projects .projects-container .proj .proj-details .remote-anchor,
+    .main .projects .projects-container .proj .proj-details .download-anchor {
+        display: block;
+    }
+
+    .download-local {
+        margin-left: 0px;
+    }
+    /** End of Projects Block/Section **/
+
+    /** Footer Section **/
+    .footer .socials a {
+        text-decoration: none;
+    }
+
+    .footer .socials p {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .footer .socials .linkedin-text p {
+        margin-left: 0px;
+    }
+
+    .footer .socials p.phone-mobile-text {
+        margin-top: 5px;
+        color: white;
+    }
+
+    .footer .socials p.phone-mobile-text:hover {
+        text-shadow: none;
+    }
+
+    .footer .socials p.phone-mobile-text::after {
+        content: "0812726384";
+        color: black;
+        position: relative;
+        right: 45px;
+    }
+    /** End of Footer Section **/
+}
+
+@media screen and (min-width: 768px) {
+    /** Navigation Menu **/
+    .header ul a {
+        color: transparent;
+    }
+    
+    .header .fa-caret-square-down {
+        display: none;
+    }
+    /** End of Navigation Menu **/
+
+    /** Introduction Block/Section **/
+    .main .intro .personal-statemet .read-more-target {
+        display: none;
+    }
+    /** End of Introduction Block/Section **/
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /** Navigation Menu **/
+    .header {
+        width: 90%;
+    }
+
+    .header li {
+        width: 23.7%;
+    }
+    /** End of Navigation Menu **/
+
+    /** Introduction Block/Section **/
+    .main .intro .my-pic {
+        margin-right: 15px;
+    }
+
+    .main .intro h1 {
+        width: 95%;
+    }
+    /** Introduction Block/Section **/
+
+    /** Projects Block/Section **/
+    .main .projects .projects-container {
+        width: 93%;
+    }
+
+    .main .projects .projects-container .proj img {
+        width: 48%;
+    }
+
+    .main .projects .projects-container .proj .proj-details {
+        width: 51%;
+    }
+
+    .main .projects .projects-container .proj .proj-details button.coming-soon-button {
+        width: 100%;
+    }
+
+    .main .projects .button.right {
+        margin-left: 85%;
+    }
+
+    .download-local {
+        float: right;
+        margin-left: 0px;
+    }
+    /** End of Projects Block/Section **/
+}
