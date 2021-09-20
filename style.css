@@ -851,7 +851,7 @@ hr:nth-child(3) {
 
     @media screen and (min-width: 808px) {
         /** Navigation Menu **/
-        .header li {
+        .header ul li {
             width: 24%;
         }
         /** End of Navigation Menu **/
