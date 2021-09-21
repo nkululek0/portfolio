@@ -843,7 +843,7 @@ hr:nth-child(3) {
         margin-left: 85%;
     }
 
-    .download-local {
+    .proj-details .download-local {
         float: right;
         margin-right: 5px;
         margin-left: 0px;
