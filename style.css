@@ -846,6 +846,7 @@ hr:nth-child(3) {
     .download-local {
         float: right;
         margin-right: 5px;
+        margin-left: 0px;
     }
     /** End of Projects Block/Section **/
 
@@ -856,6 +857,4 @@ hr:nth-child(3) {
         }
         /** End of Navigation Menu **/
     }
-
-    /** 937 downwards there's a problem with the download button **/
 }
