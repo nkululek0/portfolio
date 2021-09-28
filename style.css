@@ -474,7 +474,7 @@ hr:nth-child(3) {
 
     .main .projects .projects-container {
         width: 100%;
-        height: 37.4em;
+        height: 40em;
     }
 
     .main .projects .button.right {
@@ -563,7 +563,7 @@ hr:nth-child(3) {
         content: "0812726384";
         color: black;
         position: relative;
-        right: 45px;
+        right: 37px;
     }
     /** End of Footer Section **/
 
