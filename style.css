@@ -756,6 +756,10 @@ hr:nth-child(3) {
         text-decoration: none;
     }
 
+    .footer .socials div {
+        margin-right: 0px;
+    }
+
     .footer .socials p {
         display: block;
         margin-top: 0px;
