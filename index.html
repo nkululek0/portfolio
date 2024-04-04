@@ -2,183 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yomogi&display=swap">
-    <link rel="stylesheet" href="fonts/yomogi/Yomogi-Regular.ttf"> 
-    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.4-web/css/all.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>NV Portfolio</title>
-</head> 
+</head>
 <body>
-    <nav class="header">
-        <ul>
-            <a href="#">
-                <li class="home-nav-button">Home
-                    <i class="far fa-caret-square-down"></i>
-                </li>
-            </a>
-            <a href="#tech-stack" class="visibilty"><li >Tech Stack</li></a>
-            <a href="#projects" class="visibilty"><li>Projects</li></a>
-            <a href="#about" class="visibilty"><li>About</li></a>
-        </ul>
-    </nav>
-    <div class="main">
-        <div class="intro">
-            <img class="my-pic" src="images/intro/nv_zikode.jpg" alt="a picture of Nkululeko Zikode">
-            <h1>Hi There!, I'm Nkululeko Vuyo Zikode</h1>
-            <div class="personal-statemet">
-                <div class="block-header">
-                    <h3>A Little Bit of Who I Am</h3>
-                    <hr>
-                </div>
-                <p>
-                    I am a young curious mind, who aspires to explore his interests within the Web Development scene.
-                    My best quality traits can be described as kind, respectful and a person who keeps to himself.
-                    Technology has fascinated me to a point where <span class="read-more-text"> I became the top Computer Applications Technology
-                    learner for the entirety of my senior high school career.
-                    Through practical assignments of developing websites, I gained the core components of Web Development.
-                    Though, my most relevant experience was with my three-month probation with GloLighitng,
-                    where I along with a team, styled the company’s website and integrated additional front-end technologies.
-                    As technology advances so must I, thus constant self-improvement is a priority to me. </span> <span class="read-more-target">...read more</span>
-                </p>
+    <div id="welcome-section">
+        <div class="welcome-content">
+            <div class="profile-image">
+                <img src="./public/images/profile-picture/nv_zikode.jpg" alt="picture of Nkululeko Zikode">
             </div>
-        </div>
-        <div id="tech-stack" class="tech-stack">
-            <div class="block-header">
-                <h3>Tech Stack</h3>
-                <hr>
-            </div>
-            <div class="development">
-                <div class="sub-header">
-                    <h2>Development Toolset</h2>
-                    <hr>
-                    <hr>
+            <div class="profile-details">
+                <div class="profile-name">
+                    <h1>Nkululeko Vuyo Zikode</h1>
                 </div>
-                <ul class="dev-list-1">
-                    <li>HTML 5</li>
-                    <li>CSS 3</li>
-                    <li>JavaScript</li>
-                    <li>JQuery</li>
-                    <li>NodeJS</li>
-                </ul>
-                <ul class="dev-list-2">
-                    <li>Jasmine</li>
-                    <li>github</li>
-                    <li>Ajax</li>
-                    <li>SQL</li>
-                    <li>Agile Development</li>
-                </ul>
-                <ul class="dev-list-3">
-                    <li>Test Driven Development</li>
-                    <li>Express</li>
-                </ul>
-            </div>
-            <div class="comp-literacy">
-                <div class="sub-header">
-                    <h2>Computer Literacy</h2>
-                    <hr>
-                    <hr>
-                </div>
-                <ul class="comp-list-1">
-                    <li>Microsft Word</li>
-                    <li>Microsft Excel</li>
-                    <li>Microsft Access</li>
-                </ul>
-            </div>
-        </div>
-        <div id="projects" class="projects">
-            <div class="block-header">
-                <h3>Projects</h3>
-                <hr>
-            </div>
-            <div class="projects-container">
-                <div class="far fa-arrow-alt-circle-left button left"></div>
-                <div class="far fa-arrow-alt-circle-right button right"></div>
-                <div class="proj password-manager my-slides coming-soon">
-                    <img src="images/projects/password-manager.png" alt="picture of a password-manager">
-                    <div class="proj-details">
-                        <div class="sub-header">
-                            <h2>Password Manager</h2>
-                            <hr>
-                            <hr>
-                        </div>
-                        <p class="details">
-                            Security and eye pleasing user interface come together to create one
-                            unified password manager. A password manager that encourages you to use it
-                            as storing and browsing passowrds is exciting to do.
-                        </p>
-                        <a class="donwload-anchor" href="https://github.com/nkululek0/password-manager/archive/refs/heads/main.zip"><button class="download-local">download<i class="fas fa-download"></i></button></a>
-                    </div>
-                </div>
-                <div class="proj memory-game my-slides">
-                    <img src="images/projects/memory-game.png" alt="picture of a memory game">
-                    <div class="proj-details">
-                        <div class="sub-header">
-                            <h2>Memory Game</h2>
-                            <hr>
-                            <hr>
-                        </div>
-                        <p class="details">
-                            Click on a tile to reveal what is behind it and click on anohter
-                            to see if they match. Depending on the difficulty which is chosen by
-                            you by selecting the grid layout, see how quickly you can complete
-                            this game. There's a timer and moves counter to make things interesting
-                        </p>
-                        <a class="remote-anchor" href="https://nkululek0.github.io/memory-game/" target="_blank"><button class="remote-version">remote<i class="fas fa-upload"></i></button></a>
-                        <a class="donwload-anchor" href="https://github.com/nkululek0/memory-game/archive/refs/heads/main.zip"><button class="download-local">download<i class="fas fa-download"></i></button></a>
-                    </div>
-                </div>
-                <div class="proj semitone-difference my-slides">
-                    <img src="images/projects/semitone-difference.png" alt="picture of a semitone diference">
-                    <div class="proj-details">
-                        <div class="sub-header">
-                            <h2>Semitone Diferrence</h2>
-                            <hr>
-                            <hr>
-                        </div>
-                        <p class="details">
-                            A game where the player has to guess the difference in numbers
-                            of the given musical notes. The Reveal button can be used to get
-                            the answer. Let's see how good your semitone knowledge is.
-                        </p>
-                        <a class="remote-anchor" href="https://nkululek0.github.io/semitone-difference/" target="_blank"><button class="remote-version">remote<i class="fas fa-upload"></i></button></a>
-                        <a class="donwload-anchor" href="https://github.com/nkululek0/semitone-difference/archive/refs/heads/main.zip"><button class="download-local">download<i class="fas fa-download"></i></button></a>
-                    </div>
+                <div class="profile-summary">
+                    <p>
+                        Fullstack web developer with about 2 years of experience. <br/>
+                        A person who is best described as kind, respectful, resilient and one who keeps to himself. <br/>
+                        Through expertise from my rigorous education, work experience and personal side projects, <br/>
+                        I am more than able to bring about creative and sustainable web solutions.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <footer id="about" class="footer">
-        <div class="block-header">
-            <h3>Let's Connect</h3>
-            <hr>
+    <div id="skills-and-projects">
+        <div class="skills-and-projects-content">
+            <div class="projects-content">
+                <div class="projects-heading heading">
+                    <h2>Projects</h2>
+                </div>
+                <div class="projects">
+                    <span class="left-arrow project-arrow-button">&#11160;</span>
+                    <span class="right-arrow project-arrow-button">&#11162;</span>
+                    <div class="project-container password-manager active">
+                        <div class="project-image">
+                            <img src="./public/images/projects/password-manager.png" alt="Image of password manager">
+                        </div>
+                        <div class="project-details">
+                            <div class="project-header">
+                                <h3>Password Manager</h3>
+                            </div>
+                            <div class="project-summary">
+                                <p>
+                                    Security and eye pleasing user interface come together to create one
+                                    unified password manager. A password manager that encourages you to use it
+                                    as storing and browsing passowrds is exciting to do.
+                                </p>
+                            </div>
+                            <a target="_blank" href="https://github.com/nkululek0/password-manager" class="project-button">View</a>
+                        </div>
+                    </div>
+                    <div class="project-container memory-game">
+                        <div class="project-image">
+                            <img src="./public/images/projects/memory-game.png" alt="Image of memory game">
+                        </div>
+                        <div class="project-details">
+                            <div class="project-header">
+                                <h3>Memory Game</h3>
+                            </div>
+                            <div class="project-summary">
+                                <p>
+                                    Click on a tile to reveal what is behind it and click on anohter
+                                    to see if they match. Depending on the difficulty which is chosen by
+                                    you by selecting the grid layout, see how quickly you can complete
+                                    this game. There's a timer and moves counter to make things interesting
+                                </p>
+                            </div>
+                            <a target="_blank" href="https://github.com/nkululek0/memory-game" class="project-button">View</a>
+                        </div>
+                    </div>
+                    <div class="project-container semitone-difference">
+                        <div class="project-image">
+                            <img src="./public/images/projects/semitone-difference.png" alt="Image of semitone difference">
+                        </div>
+                        <div class="project-details">
+                            <div class="project-header">
+                                <h3>Semitone Diferrence</h3>
+                            </div>
+                            <div class="project-summary">
+                                <p>
+                                    A game where the player has to guess the difference in numbers
+                                    of the given musical notes. The Reveal button can be used to get
+                                    the answer. Let's see how good your semitone knowledge is.
+                                </p>
+                            </div>
+                            <a target="_blank" href="https://github.com/nkululek0/semitone-difference" class="project-button">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-heading heading">
+                    <h2>Skills</h2>
+                </div>
+                <ul class="skills-list">
+                    <li class="skill">HTML 5</li>
+                    <li class="skill">CSS 3</li>
+                    <li class="skill">JavaScript</li>
+                    <li class="skill">JQuery</li>
+                    <li class="skill">EJS</li>
+                    <li class="skill">Agile Development</li>
+                    <li class="skill">Figma</li>
+                    <li class="skill">MVC</li>
+                    <li class="skill">Ajax</li>
+                    <li class="skill">NodeJS</li>
+                    <li class="skill">Java 11</li>
+                    <li class="skill">Git</li>
+                    <li class="skill">Github</li>
+                    <li class="skill">Bitbucket</li>
+                    <li class="skill">MySQL</li>
+                    <li class="skill">MongoDB</li>
+                </ul>
+            </div>
         </div>
-        <div class="socials">
-            <div>
-                <a class="social-icon" href="https://www.linkedin.com/in/nkululeko-vuyo-0015821ba" target="_blank"><img class="linkedin" src="images/socials/linkedin.png" alt="linkedin icon"></a>
-                <a href="https://www.linkedin.com/in/nkululeko-vuyo-0015821ba" target="_blank" class="linkedin-text"><p>LinkedIn</p></a>
+    </div>
+    <div id="contact">
+        <div class="contact heading">
+            <h2>Get In Touch</h2>
+        </div>
+        <div class="contact-options">
+            <div class="contact-item">
+                <img src="./public/images/socials/mail.svg" alt="icon of a mail letter">
+                <span class="contact-item-text">nkululekovuyo0103@gmail.com</span>
             </div>
-            <div>
-                <a class="social-icon" href="https://github.com/nkululek0" target="_blank"><img class="github" src="images/socials/github.png" alt="github icon"></a>
-                <a href="https://github.com/nkululek0" target="_blank"><p>Github</p></a>
-            </div>
-            <div>
-                <a class="social-icon" href="mailto:nkululekovuyo0103@gmail.com" target="_blank"><img class="mail" src="images/socials/mail.jpeg" alt="mail icon"></a>
-                <a href="mailto:nkululekovuyo0103@gmail.com" target="_blank"><p>Email</p></a>
-            </div>
-            <div>
-                <img class="phone social-icon" src="images/socials/phone.jpeg" alt="phone icon">
-                <p class="phone-mobile-text">Phone</p>
+            <div class="contact-item">
+                <img src="./public/images/socials/phone.svg" alt="icon of a phone">
+                <span class="contact-item-text">0812726384 / 0682733982</span>
             </div>
         </div>
-    </footer>
-<script type="text/javascript" src="script/header-navigation.js"></script>
-<script type="text/javascript" src="script/intro-navigation.js"></script>
-<script type="text/javascript" src="script/project-navigation.js"></script>
-<script type="text/javascript" src="script/footer-effect.js"></script>
+    </div>
+    <script src="./public/scripts//project-navigation.js"></script>
 </body>
 </html>
