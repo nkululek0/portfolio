@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NV Portfolio</title>
+    <link rel="stylesheet" href="./public/styles/main.css">
+    <script src="./public/scripts/utilities/jquery-3.7.1.slim.min.js" defer></script>
+</head>
+<body class="font-poppins">
+    <article class="page-navigation z-10 fixed top-0 w-full flex flex-col items-end p-4 bg-custom-white-color shadow-sm md:flex-row">
+        <section class="header flex items-center justify-between w-full">
+            <div class="left-side">
+                <h1 class="hidden md:block">NV Zikode</h1>
+                <h2 class="text-[1.3rem] md:hidden">NV Zikode</h2>
+            </div>
+            <div class="right-side">
+                <div class="menu-icons-container md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="open-menu h-10 w-10">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="close-menu hidden h-10 w-10">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <nav class="nav hidden w-full md:block!">
+            <ul class="flex flex-col items-center gap-2  md:flex-row">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </article>
+    <main class="mt-3 mx-4 relative top-[5rem]">
+        <article class="content">
+            <section class="page-heading">
+                <h3 class="title text-[1.3rem] uppercase text-secondary-color font-semibold">Web Developer</h3>
+                <h1 class="name text-[2rem] font-bold text-primary-color text-shadow-primary">Nkululeko Vuyo Zikode</h1>
+            </section>
+            <section class="about mt-4">
+                <p class="intro text-secondary-color">
+                    An analytical problem solver that uses creative thinking to produce innovative solutions. I take initiative when needed without the need for supervision, but also posses good written and verbal communication skills which helps me flourish in a team environment.
+                    I have 3 years of web development experience which has helped bridge the gap between my theoretical knowledge and practical skills needed to succeed in a development environment.
+                </p>
+                <div class="actions flex justify-between mt-6 text-[0.8rem]">
+                    <a href="#" class="bg-custom-black-color text-custom-white-color font-bold text-center py-2 px-4 rounded-3xl">Download CV</a>
+                    <a href="#" class="bg-primary-color text-custom-white-color font-bold py-2 px-4 rounded-3xl">Contact Me</a>
+                </div>
+            </section>
+        </article>
+        <article class="media mt-18 flex flex-col items-center">
+            <div class="image-decoration-container w-3/4 relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-4 before:bg-primary-color">
+                <img src="./public/images/nkululeko-vuyo-zikode.jpg" alt="picture of Nkululeko Zikode" class="relative"/>
+            </div>
+            <div class="decoration -z-1 relative w-1/4 h-2/4">
+                <img src="./public/assests/mobile-dots.png" alt="orange dots" class="w-full absolute left-7/5 -top-12 rotate-180 mb-4"/>
+            </div>
+        </article>
+    </main>
+<script src="./public/scripts/page-navigation-menu.js" type="text/javascript" defer></script>
+</body>
+</html>

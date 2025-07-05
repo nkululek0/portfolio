@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import "tailwindcss";
+
+@theme {
+    --font-poppins: 'Poppins', cursive;
+    --color-primary-color: #ff9527;
+    --color-secondary-color: #45474b;
+    --color-custom-black-color: #000;
+    --color-custom-white-color: #fff;
+    --text-shadow-primary: 2px 3px 2px #ff952761;
+}

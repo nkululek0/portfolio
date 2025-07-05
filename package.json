@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/public/styles/configurations/tailwind-configuration.css -o ./src/public/styles/main.css",
+    "build-watch:css": "npx tailwindcss -i ./src/public/styles/configurations/tailwind-configuration.css -o ./src/public/styles/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkululek0/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkululek0/portfolio/issues"
+  },
+  "homepage": "https://github.com/nkululek0/portfolio#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  }
+}
