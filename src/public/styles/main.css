@@ -10,6 +10,8 @@
       "Courier New", monospace;
     --color-pink-500: oklch(65.6% 0.241 354.308);
     --spacing: 0.25rem;
+    --text-lg: 1.125rem;
+    --text-lg--line-height: calc(1.75 / 1.125);
     --font-weight-thin: 100;
     --font-weight-extralight: 200;
     --font-weight-semibold: 600;
@@ -346,11 +348,18 @@
   .font-poppins {
     font-family: var(--font-poppins);
   }
+  .text-lg {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
   .text-\[0\.8rem\] {
     font-size: 0.8rem;
   }
   .text-\[1\.3rem\] {
     font-size: 1.3rem;
+  }
+  .text-\[1\.5rem\] {
+    font-size: 1.5rem;
   }
   .text-\[2rem\] {
     font-size: 2rem;
@@ -444,6 +453,11 @@
       background-color: var(--color-primary-color);
     }
   }
+  .md\:m-auto {
+    @media (width >= 48rem) {
+      margin: auto;
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -459,9 +473,51 @@
       display: none;
     }
   }
+  .md\:w-\[10rem\] {
+    @media (width >= 48rem) {
+      width: 10rem;
+    }
+  }
+  .md\:w-\[30rem\] {
+    @media (width >= 48rem) {
+      width: 30rem;
+    }
+  }
   .md\:flex-row {
     @media (width >= 48rem) {
       flex-direction: row;
+    }
+  }
+  .md\:items-center {
+    @media (width >= 48rem) {
+      align-items: center;
+    }
+  }
+  .md\:underline-offset-8 {
+    @media (width >= 48rem) {
+      text-underline-offset: 8px;
+    }
+  }
+  .md\:shadow-md {
+    @media (width >= 48rem) {
+      --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .md\:shadow-none {
+    @media (width >= 48rem) {
+      --tw-shadow: 0 0 #0000;
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+  }
+  .lg\:w-\[10rem\] {
+    @media (width >= 64rem) {
+      width: 10rem;
+    }
+  }
+  .lg\:w-\[30rem\] {
+    @media (width >= 64rem) {
+      width: 30rem;
     }
   }
 }
