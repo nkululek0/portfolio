@@ -921,6 +921,11 @@
       display: flex;
     }
   }
+  .lg\:h-\[37rem\] {
+    @media (width >= 64rem) {
+      height: 37rem;
+    }
+  }
   .lg\:h-\[80vh\] {
     @media (width >= 64rem) {
       height: 80vh;
