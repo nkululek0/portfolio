@@ -234,6 +234,12 @@
   .bottom-\[5rem\] {
     bottom: 5rem;
   }
+  .bottom-\[8\.1rem\] {
+    bottom: 8.1rem;
+  }
+  .bottom-\[17\.1rem\] {
+    bottom: 17.1rem;
+  }
   .-left-\[10rem\] {
     left: calc(10rem * -1);
   }
@@ -303,11 +309,23 @@
   .mr-\[-3\.4rem\] {
     margin-right: -3.4rem;
   }
+  .mr-\[-3rem\] {
+    margin-right: -3rem;
+  }
+  .mr-\[-4rem\] {
+    margin-right: -4rem;
+  }
+  .mr-\[-5rem\] {
+    margin-right: -5rem;
+  }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
   }
   .mb-16 {
     margin-bottom: calc(var(--spacing) * 16);
+  }
+  .ml-\[-5rem\] {
+    margin-left: -5rem;
   }
   .ml-\[1rem\] {
     margin-left: 1rem;
@@ -456,6 +474,12 @@
   .w-\[8rem\] {
     width: 8rem;
   }
+  .w-\[9rem\] {
+    width: 9rem;
+  }
+  .w-\[10rem\] {
+    width: 10rem;
+  }
   .w-\[12rem\] {
     width: 12rem;
   }
@@ -532,6 +556,12 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
+  }
+  .justify-start {
+    justify-content: flex-start;
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
@@ -706,6 +736,9 @@
   }
   .opacity-70 {
     opacity: 70%;
+  }
+  .opacity-85 {
+    opacity: 85%;
   }
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -974,6 +1007,16 @@
       top: -3rem;
     }
   }
+  .lg\:mx-14 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 14);
+    }
+  }
+  .lg\:mx-16 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 16);
+    }
+  }
   .lg\:ml-14 {
     @media (width >= 64rem) {
       margin-left: calc(var(--spacing) * 14);
@@ -987,6 +1030,11 @@
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
+    }
+  }
+  .lg\:h-\[28rem\] {
+    @media (width >= 64rem) {
+      height: 28rem;
     }
   }
   .lg\:h-\[37rem\] {
@@ -1022,6 +1070,16 @@
   .lg\:justify-center {
     @media (width >= 64rem) {
       justify-content: center;
+    }
+  }
+  .lg\:overflow-visible {
+    @media (width >= 64rem) {
+      overflow: visible;
+    }
+  }
+  .lg\:px-16 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 16);
     }
   }
 }
