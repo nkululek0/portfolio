@@ -676,6 +676,11 @@
       }
     }
   }
+  .min-\[481px\]\:m-auto {
+    @media (width >= 481px) {
+      margin: auto;
+    }
+  }
   .min-\[481px\]\:hidden {
     @media (width >= 481px) {
       display: none;
@@ -684,6 +689,16 @@
   .min-\[481px\]\:w-full {
     @media (width >= 481px) {
       width: 100%;
+    }
+  }
+  .min-\[481px\]\:w-max {
+    @media (width >= 481px) {
+      width: max-content;
+    }
+  }
+  .min-\[481px\]\:text-center {
+    @media (width >= 481px) {
+      text-align: center;
     }
   }
   .sm\:mt-8 {
