@@ -1,5 +1,4 @@
 /*! tailwindcss v4.1.11 | MIT License | https://tailwindcss.com */
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -21,7 +20,6 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --font-poppins: 'Poppins', cursive;
     --color-primary-color: #ff9527;
     --color-secondary-color: #666;
     --color-custom-black-color: #000;
@@ -222,9 +220,6 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .left-7 {
-    left: calc(var(--spacing) * 7);
-  }
   .left-7\/5 {
     left: calc(7/5 * 100%);
   }
@@ -260,9 +255,6 @@
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
-  }
-  .mt-8 {
-    margin-top: calc(var(--spacing) * 8);
   }
   .mt-16 {
     margin-top: calc(var(--spacing) * 16);
@@ -323,9 +315,6 @@
   .h-0 {
     height: calc(var(--spacing) * 0);
   }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
   .h-2\/4 {
     height: calc(2/4 * 100%);
   }
@@ -359,32 +348,17 @@
   .\!w-12 {
     width: calc(var(--spacing) * 12) !important;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/4 {
     width: calc(1/4 * 100%);
-  }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
   }
   .w-2\/3 {
     width: calc(2/3 * 100%);
   }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
-  }
   .w-3\/4 {
     width: calc(3/4 * 100%);
   }
-  .w-4 {
-    width: calc(var(--spacing) * 4);
-  }
   .w-4\/10 {
     width: calc(4/10 * 100%);
-  }
-  .w-6 {
-    width: calc(var(--spacing) * 6);
   }
   .w-6\/10 {
     width: calc(6/10 * 100%);
@@ -409,9 +383,6 @@
   }
   .w-full {
     width: 100%;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .\!-translate-x-16 {
     --tw-translate-x: calc(var(--spacing) * -16) !important;
@@ -531,9 +502,6 @@
   .text-center {
     text-align: center;
   }
-  .font-poppins {
-    font-family: var(--font-poppins);
-  }
   .text-lg {
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
@@ -546,9 +514,6 @@
   }
   .text-\[1\.3rem\] {
     font-size: 1.3rem;
-  }
-  .text-\[1\.5rem\] {
-    font-size: 1.5rem;
   }
   .text-\[2rem\] {
     font-size: 2rem;
@@ -592,10 +557,6 @@
   .shadow-md {
     --tw-shadow: 0 4px 6px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 2px 4px -2px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .blur {
     --tw-blur: blur(8px);
@@ -686,11 +647,6 @@
       display: none;
     }
   }
-  .min-\[481px\]\:w-full {
-    @media (width >= 481px) {
-      width: 100%;
-    }
-  }
   .min-\[481px\]\:w-max {
     @media (width >= 481px) {
       width: max-content;
@@ -726,11 +682,6 @@
       margin-top: calc(var(--spacing) * 12);
     }
   }
-  .md\:block {
-    @media (width >= 48rem) {
-      display: block;
-    }
-  }
   .md\:block\! {
     @media (width >= 48rem) {
       display: block !important;
@@ -739,11 +690,6 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
-    }
-  }
-  .md\:w-\[15rem\] {
-    @media (width >= 48rem) {
-      width: 15rem;
     }
   }
   .md\:flex-row {
@@ -823,11 +769,6 @@
       width: calc(2/3 * 100%);
     }
   }
-  .lg\:w-\[10rem\] {
-    @media (width >= 64rem) {
-      width: 10rem;
-    }
-  }
   .lg\:w-\[15rem\] {
     @media (width >= 64rem) {
       width: 15rem;
@@ -853,6 +794,9 @@
       padding-inline: calc(var(--spacing) * 16);
     }
   }
+}
+* {
+  font-family: 'Poppins', sans-serif;
 }
 @property --tw-translate-x {
   syntax: "*";
@@ -967,11 +911,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -1071,7 +1010,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
