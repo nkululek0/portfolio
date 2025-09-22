@@ -6,7 +6,11 @@
     <title>Projects</title>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../styles/swiper.css">
+    <link rel="stylesheet" href="../styles/flip-box.css">
     <script src="../scripts/utilities/jquery-3.7.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 </head>
 <body>
     <article class="page-navigation z-10 fixed top-0 w-full flex flex-col items-end bg-custom-white-color md:flex-row md:items-center md:shadow-md">
@@ -63,15 +67,98 @@
                 <h1 class="name mt-2 text-[2rem] font-bold text-primary-color text-shadow-primary leading-[1.1]">Awesome Works</h1>
             </div>
         </section>
-        <section class="main-projects-container min-[481px]:hidden">
-            <article class="mobile-projects">
-                <div class="project-1">Project 1</div>
-                <div class="project-2">Project 2</div>
-                <div class="project-3">Project 3</div>
-            </article>
-            <section class="tablet-and-desktop-projects"></section>
-        </section>
+        <article class="carousel w-full h-[31rem] mt-16 px-4 lg:h-[30rem] lg:px-16 sm:mt-8">
+            <div class="w-full relative">
+                <div class="swiper multiple-slide-carousel swiper-container relative">
+                    <div class="swiper-wrapper mb-16 text-secondary-color">
+                        <div class="swiper-slide">
+                            <div class="box-container">
+                                <div class="box-item">
+                                    <div class="flip-box">
+                                        <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                                            <div class="inner color-white">
+                                                <h3 class="flip-box-header">Frontend Development</h3>
+                                                <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                                            <div class="inner color-white">
+                                                <p>A short description.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-container">
+                                <div class="box-item">
+                                    <div class="flip-box">
+                                        <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                                            <div class="inner color-white">
+                                                <h3 class="flip-box-header">Backend Development</h3>
+                                                <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                                            <div class="inner color-white">
+                                                <p>A short description.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-container">
+                                <div class="box-item">
+                                    <div class="flip-box">
+                                        <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                                            <div class="inner color-white">
+                                                <h3 class="flip-box-header">Web Design</h3>
+                                                <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                                            <div class="inner color-white">
+                                                <p>A short description.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="box-container">
+                                <div class="box-item">
+                                    <div class="flip-box">
+                                        <div class="flip-box-front text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                                            <div class="inner color-white">
+                                                <h3 class="flip-box-header">Database Administration</h3>
+                                                <img src="https://s25.postimg.cc/65hsttv9b/cta-arrow.png" alt="" class="flip-box-img">
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back text-center" style="background-image: url('https://s25.postimg.cc/frbd9towf/cta-2.png');">
+                                            <div class="inner color-white">
+                                                <p>A short description.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-center items-center m-auto left-0 right-0 w-fit bottom-18">
+                        <button id="slider-button-left" class="swiper-button-prev after:text-[20px]! after:text-primary-color hover:after:text-custom-white-color group !p-2 flex justify-center items-center border border-solid border-primary-color !w-12 !h-12 transition-all duration-500 rounded-full  hover:bg-primary-color !-translate-x-16" data-carousel-prev>
+                        </button>
+                        <button id="slider-button-right" class="swiper-button-next after:text-[20px]! after:text-primary-color hover:after:text-custom-white-color group !p-2 flex justify-center items-center border border-solid border-primary-color !w-12 !h-12 transition-all duration-500 rounded-full hover:bg-primary-color !translate-x-16" data-carousel-next>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
     </main>
 <script src="../scripts/page-navigation-menu.js" type="text/javascript" defer></script>
+<script src="../scripts/swiper.js" defer></script>
 </body>
 </html>
