@@ -147,3 +147,14 @@
   padding: 15px 20px;
   text-transform: uppercase;
 }
+
+.flip-box-back .inner {
+  padding: 25px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .flip-box p {
+    overflow-y: scroll;
+  }
+}
