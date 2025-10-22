@@ -72,6 +72,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  background-color: rgb(102, 102, 102);
 
   -ms-transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
@@ -94,14 +95,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: absolute;
   left: 0;
   width: 100%;
-  padding: 60px;
+  height: 100%;
+  padding: 60px 60px 0;
   outline: 1px solid transparent;
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
+  border-radius: 12px;
+  background-color: rgb(12 12 12 / 45%);
 
   transform: translateY(-50%) translateZ(60px) scale(.94);
   -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
@@ -111,17 +116,23 @@
 
 .flip-box-header {
   font-size: 34px;
+  text-shadow: 2px 2px 4px #000;
 }
 
 .flip-box p {
   font-size: 20px;
   line-height: 1.5em;
+  text-shadow: 2px 2px black;
 }
 
 .flip-box-img {
   height: 4rem;
   width: 4rem;
   margin-top: 25px;
+  background-color: rgb(63 63 63 / 60%);
+  border: 2px solid rgb(210 210 255 / 60%);
+  border-radius: 50%;
+  box-shadow: -2px 2px 4px rgb(210 210 210 / 60%);
 }
 
 .flip-box-button {
