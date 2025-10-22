@@ -14,6 +14,7 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
     --default-transition-duration: 150ms;
@@ -357,6 +358,9 @@
   .h-\[31rem\] {
     height: 31rem;
   }
+  .h-\[70\%\] {
+    height: 70%;
+  }
   .h-full {
     height: 100%;
   }
@@ -407,6 +411,21 @@
   }
   .w-\[15rem\] {
     width: 15rem;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
+  .w-\[32\%\] {
+    width: 32%;
+  }
+  .w-\[35\%\] {
+    width: 35%;
+  }
+  .w-\[65\%\] {
+    width: 65%;
+  }
+  .w-\[100\%\] {
+    width: 100%;
   }
   .w-fit {
     width: fit-content;
@@ -464,6 +483,9 @@
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
@@ -472,6 +494,9 @@
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -489,6 +514,10 @@
     border-radius: var(--radius-xl);
   }
   .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
@@ -511,11 +540,23 @@
   .bg-primary-color {
     background-color: var(--color-primary-color);
   }
+  .object-cover {
+    object-fit: cover;
+  }
   .\!p-2 {
     padding: calc(var(--spacing) * 2) !important;
   }
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
+  }
+  .p-3 {
+    padding: calc(var(--spacing) * 3);
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
+  }
+  .p-8 {
+    padding: calc(var(--spacing) * 8);
   }
   .p-\[0\.3rem\] {
     padding: 0.3rem;
@@ -523,11 +564,26 @@
   .p-\[2\.5rem\] {
     padding: 2.5rem;
   }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
+  }
+  .py-3 {
+    padding-block: calc(var(--spacing) * 3);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
@@ -547,6 +603,9 @@
   }
   .text-\[1\.3rem\] {
     font-size: 1.3rem;
+  }
+  .text-\[1rem\] {
+    font-size: 1rem;
   }
   .text-\[2rem\] {
     font-size: 2rem;
@@ -601,11 +660,6 @@
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
-  }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .transition-all {
     transition-property: all;
@@ -669,6 +723,13 @@
       }
     }
   }
+  .hover\:text-custom-white-color {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-custom-white-color);
+      }
+    }
+  }
   .hover\:after\:text-custom-white-color {
     &:hover {
       @media (hover: hover) {
@@ -707,6 +768,11 @@
   .sm\:hidden {
     @media (width >= 40rem) {
       display: none;
+    }
+  }
+  .sm\:text-\[1\.2rem\] {
+    @media (width >= 40rem) {
+      font-size: 1.2rem;
     }
   }
   .md\:top-\[-6rem\] {
